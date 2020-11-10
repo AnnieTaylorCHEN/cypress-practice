@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 
-const { rgb } = require("d3-color");
 
 describe("our first suite", () => {
   it("first test", () => {
@@ -256,6 +255,7 @@ describe("our first suite", () => {
         cy.wrap(tableRow).find('[placeholder="Last Name"]').type("Bean");
         cy.wrap(tableRow).find(".nb-checkmark").click();
       });
+      
     cy.get("tbody tr")
       .first()
       .find("td")
